@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Alajabar dalam Pemodelan</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -17,24 +17,54 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<h1>Algebraic Modelling</h1>
+				</section>
+				<section>
 					<section data-markdown>
 						<script type="text/template">
-							# Pemodelan dengan bantuan Aljabar
+							## Tahap 1: Pemodelan dengan bantuan Aljabar
 							* Salah satu bagian utama dalam pemodelan sistem kompleks adalah memecah sistem kompleks menjadi bagian-bagian yang lebih sederhana dan menggabungkan bagian-bagian yang sederhana menjadi sistem yang lebih kompleks. Bagaimana melakukan ini semua secara terstruktur?
 							---
-							## Tujuan kegiatan
-							* Tahap 1 dari projek ini adalah membangun model dlalam bahasa pemrograman julia menggunakan perangkat aljabar Teori Kategori.
+							### Tujuan kegiatan
+							* Tahap 1 dari projek ini adalah membangun model dalam bahasa pemrograman julia menggunakan perangkat aljabar teori kategori.
 							* Di tahap 1 ini (hingga akhir kuliah pemodelan) Anda hanya diminta untuk memahami operasi-operasi aljabar yang ada tanpa perlu memahami sifat-sifatnya secara formal. 
 							---
 
-							## Undirected Wiring Diagram
+							### Undirected Wiring Diagram
+							---
+							### Resource Sharer
 					
 						</script>
 					</section>
 				</section>
-				<section>Slide 1.5</section>
-				<!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
-				<section data-markdown="markdown.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Tahap 2: Alat-alat Aljabar
+							Pada tahap 2 ini kita akan mengenali semua alat-alat aljabar yang dipakai dan mengkajinya dalam dalam teori kategori. Jika waktu mencukupi, tahap 2 ini dapat dilaksanakan dalam masa kuliah pemodelan.
+							---
+							### Kategori Himpunan hingga `$$\text{Fin}$$`
+							---
+							### Decorated/Structured Co(Span)
+							---
+							### UWD sebagai Decorated/Structured Co(Span)
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Tahap 3: Sifat-sifat Aljabar Lanjut
+							Tahap 3 ini Anda akan membahas contoh lain dari UWD seperti ... dan sifat-sifat kategori lanjut dari UWD dan contoh-contoh serupa.
+							---
+							### Double Category Theory
+							---
+							#### Fibered ...
+
+						</script>
+					</section>
+				</section>
+
 				<section>
 					<section data-markdown>
 						<script type="text/template">
@@ -86,6 +116,20 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+
+				// The "normal" size of the presentation, aspect ratio will
+				// be preserved when the presentation is scaled to fit different
+				// resolutions. Can be specified using percentage units.
+				width: 1960,
+				height: 1080,
+
+				// Factor of the display size that should remain empty around
+				// the content
+				margin: 0.01,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 2.0,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
